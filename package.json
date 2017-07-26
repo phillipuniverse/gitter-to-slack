@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "gitter-to-slack.js",
-  "start": "node gitter-to-slack.js",
   "dependencies": {
     "moment": "^2.18.1",
     "request": "^2.81.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node gitter-to-slack.js"
   },
   "keywords": [],
   "author": "",
