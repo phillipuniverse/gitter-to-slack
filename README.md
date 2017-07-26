@@ -29,9 +29,18 @@ and see the message show up in Slack:
 
 ![slack-message](https://user-images.githubusercontent.com/684275/28644032-7b6c3614-721d-11e7-8ac3-24cbec61a36e.png)
 
-### Environment Variables
+## Environment Variables
 
 - **GITTER_ROOM_ID** - This is a non-human-readable form of the Gitter room id referred to from the Gitter API. The easiest way to get this ID is to go to [the Gitter rooms API docs](https://developer.gitter.im/docs/rooms-resource), copy the example request and pick out the room id that you want to listen to 
 - **GITTER_TOKEN** - The access token from https://developer.gitter.im/apps
 - **GITTER_ROOM_SLUG**  - Used to build the link from the Slack message to the message in Gitter. If you are in a Gitter room then this value is the part after https://gitter.im/. So if a room is accessible at https://gitter.im/BroadleafCommerce/BroadleafCommerce then this value would be `BroadleafCommerce/BroadleafCommerce`
 - **SLACK_HOOK_URL** - After creating a 'Custom Integration' in Slack (go to your team settings, Configure Apps -> Custom Integrations -> Add Configuration) this should be the 'Webhook URL' in the configuration settings
+
+## Deploying
+
+The easiest way to keep this running forever is to use Heroku's free tier. Since there is a start script specified in `package.json` you can deploy this with the Heroku CLI with:
+
+```console
+heroku create
+heroku config:set GITTER_ROOM_ID=...
+```
