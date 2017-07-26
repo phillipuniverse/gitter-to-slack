@@ -1,0 +1,17 @@
+{
+  "name": "gitter-to-slack-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gitter-to-slack.js",
+  "dependencies": {
+    "moment": "^2.18.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
