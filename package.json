@@ -1,8 +1,9 @@
 {
-  "name": "gitter-to-slack-node",
+  "name": "gitter-to-slack",
   "version": "1.0.0",
   "description": "",
   "main": "gitter-to-slack.js",
+  "start": "node gitter-to-slack.js",
   "dependencies": {
     "moment": "^2.18.1",
     "request": "^2.81.0"
@@ -13,5 +14,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "v8.1.4"
+  }
 }
