@@ -24,7 +24,7 @@ var req = https.request(options, function(res) {
       var gitterData = JSON.parse(msg);
       var slackMessage = '<https://gitter.im/' + gitterRoomSlug + '?at=' + gitterData.id;
       slackMessage += '|' + gitterData.fromUser.displayName;
-      var sentDate = moment(gitterData.sent).format('MMM-D h:mm A')
+      var sentDate = moment(gitterData.sent).format('MMM-D h:mm A zz')
       slackMessage += ' [' + sentDate + ']>';
       slackMessage += ': ' + gitterData.text;
       request.post(slackHookUrl,
