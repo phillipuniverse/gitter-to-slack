@@ -27,7 +27,7 @@ var req = https.request(options, function(res) {
       var sentDate = moment(gitterData.sent).format('MMM-D h:mm A')
       slackMessage += ' [' + sentDate + ']>';
       slackMessage += ': ' + gitterData.text;
-      request.post(process.env.SLACK_HOOK_URL,
+      request.post(slackHookUrl,
         { json: { text: slackMessage} },
         function (err, resp, body) {
           if (err) {
