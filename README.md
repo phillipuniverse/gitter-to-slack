@@ -38,7 +38,7 @@ and see the message show up in Slack:
 
 ## Deploying
 
-The easiest way to keep this running forever is to use Heroku's free tier. Since there is a start script specified in `package.json` you can deploy this with the Heroku CLI with:
+The easiest way to keep this running forever is to use Heroku's free tier. You can deploy this with the Heroku CLI with:
 
 ```console
 heroku create
