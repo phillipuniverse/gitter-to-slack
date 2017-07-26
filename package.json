@@ -5,7 +5,6 @@
   "main": "gitter-to-slack.js",
   "dependencies": {
     "moment": "^2.18.1",
-    "moment-timezone": "^0.5.13",
     "request": "^2.81.0"
   },
   "devDependencies": {},
