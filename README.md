@@ -31,7 +31,7 @@ and see the message show up in Slack:
 
 ## Environment Variables
 
-- **GITTER_ROOM_ID** - This is a non-human-readable form of the Gitter room id referred to from the Gitter API. The easiest way to get this ID is to go to [the Gitter rooms API docs](https://developer.gitter.im/docs/rooms-resource), copy the example request and pick out the room id that you want to listen to 
+- **GITTER_ROOM_ID** - This is a non-human-readable form of the Gitter room id referred to from the Gitter API. The easiest way to get this ID is to go to [the Gitter rooms API docs](https://developer.gitter.im/docs/rooms-resource), copy the example curl request from the 'List rooms' endpoint, run that from your terminal and pick out the room id that you want to listen to 
 - **GITTER_TOKEN** - The access token from https://developer.gitter.im/apps
 - **GITTER_ROOM_SLUG**  - Used to build the link from the Slack message to the message in Gitter. If you are in a Gitter room then this value is the part after https://gitter.im/. So if a room is accessible at https://gitter.im/BroadleafCommerce/BroadleafCommerce then this value would be `BroadleafCommerce/BroadleafCommerce`
 - **SLACK_HOOK_URL** - After creating a 'Custom Integration' in Slack (go to your team settings, Configure Apps -> Custom Integrations -> Add Configuration) this should be the 'Webhook URL' in the configuration settings
